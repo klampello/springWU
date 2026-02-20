@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+
+header {
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+nav, footer {
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+ }
+
+ .box {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+
+
+ }

@@ -55,3 +55,33 @@ footer {
 
 
  }
+
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        padding: 10px; 
+        height: auto; 
+    }
+
+
+    .row2 {
+        grid-template-columns: 1fr; 
+        height: auto; 
+    }
+
+    .row3 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+  
+    header {
+        height: 200px; 
+    }
+
+    .box {
+        margin-bottom: 10px; 
+    }
+}

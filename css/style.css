@@ -25,11 +25,26 @@ nav {
     background-color: azure;
     padding: 10px;
     text-align: center;
-    height: 100px
+    height: 100px 
     
-    
-  
 }
+
+nav a {
+    display: inline-block;      /* keeps links inline but allows padding/margin */
+    margin: 0 100px;             /* space between links */
+    padding: 10px 10px;         /* button padding */
+    background-color: #007BFF;  /* button color */
+    color: white;               /* text color */
+    text-decoration: none;      /* remove underline */
+    border-radius: 5px;         /* rounded corners */
+    font-weight: bold;          /* bold text */
+    transition: background 0.3s; /* smooth hover transition */
+}
+
+nav a:hover {
+    background-color: #0056b3; /* hover color */
+}
+
 
 footer {
     background-color: azure;
@@ -111,18 +126,5 @@ footer {
     margin-right: auto;
 }
 
-.button-link {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: teal;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-}
 
-.button-link:hover {
-    background-color: darkcyan;
-    transform: scale(1.05);
-}
+

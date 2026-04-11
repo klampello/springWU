@@ -30,19 +30,19 @@ nav {
 }
 
 nav a {
-    display: inline-block;      /* keeps links inline but allows padding/margin */
-    margin: 0 100px;             /* space between links */
-    padding: 10px 10px;         /* button padding */
-    background-color: #007BFF;  /* button color */
-    color: white;               /* text color */
-    text-decoration: none;      /* remove underline */
-    border-radius: 5px;         /* rounded corners */
-    font-weight: bold;          /* bold text */
-    transition: background 0.3s; /* smooth hover transition */
+    display: inline-block;      
+    margin: 0 100px;             
+    padding: 10px 10px;         
+    background-color: #007BFF;  
+    color: white;               
+    text-decoration: none;      
+    border-radius: 5px;         
+    font-weight: bold;          
+    transition: background 0.3s; 
 }
 
 nav a:hover {
-    background-color: #0056b3; /* hover color */
+    background-color: #0056b3; 
 }
 
 

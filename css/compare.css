@@ -1,4 +1,4 @@
-/* ── Compare page layout ── */
+
 
 .compare-wrapper {
   display: flex;
@@ -7,7 +7,9 @@
   padding: 20px 0;
 }
 
-/* ── Nation header cards ── */
+
+
+
 
 .nations-header {
   display: grid;
@@ -15,6 +17,7 @@
   align-items: center;
   gap: 16px;
 }
+
 
 .nation-card {
   display: flex;
@@ -25,11 +28,18 @@
   padding-bottom: 16px;
 }
 
+
+
+
 .sweden-card {
   background-color: #006AA7;
 }
 
-/* TODO: style norway card */
+.norway-card {
+  background-color: #EF2B2D;
+}
+
+
 
 .nation-img {
   width: 100%;
@@ -44,6 +54,11 @@
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
+
+
+
+
+
 
 .sweden-title {
   color: #FECC02;
@@ -68,7 +83,7 @@
   flex-shrink: 0;
 }
 
-/* ── Comparison table ── */
+
 
 .compare-table {
   display: flex;
@@ -87,6 +102,8 @@
 .compare-row:nth-child(odd) .sweden-cell {
   background-color: #d6eaf8;
 }
+
+
 
 .compare-row:nth-child(even) .sweden-cell {
   background-color: #ebf5fb;
@@ -129,6 +146,8 @@
   text-transform: uppercase;
 }
 
+
+
 .sweden-cell {
   color: #006AA7;
   font-weight: 600;
@@ -141,7 +160,7 @@
   border-left: 2px solid #EF2B2D;
 }
 
-/* ── Responsive ── */
+
 
 @media screen and (max-width: 700px) {
   .nations-header {

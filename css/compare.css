@@ -24,7 +24,7 @@ body::after {
     transparent
   );
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 .compare-wrapper {
@@ -158,6 +158,15 @@ body::after {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
   text-align: center;
+}
+
+.row-highlight .sweden-cell,
+.row-highlight .norway-cell {
+  filter: brightness(1.15);
+}
+
+.row-highlight .label-cell {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .label-cell {

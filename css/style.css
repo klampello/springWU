@@ -78,6 +78,7 @@ footer {
     border: 1px solid #e8d9c0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
     overflow: hidden;
 }
 
@@ -103,6 +104,7 @@ footer {
 
 .box-image {
     overflow: hidden;
+    order: -1;
 }
 
 .box-image img {

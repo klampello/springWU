@@ -162,11 +162,11 @@ body::after {
 
 .row-highlight .sweden-cell,
 .row-highlight .norway-cell {
-  filter: brightness(1.15);
+  filter: brightness(0.6);
 }
 
 .row-highlight .label-cell {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  filter: brightness(1.6);
 }
 
 .label-cell {

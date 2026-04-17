@@ -1,5 +1,13 @@
 
 
+body {
+  background-image: url('../img/Torg.jpg'), url('../img/Fjord.webp');
+  background-position: left center, right center;
+  background-size: 50% 100%, 50% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+}
+
 .compare-wrapper {
   display: flex;
   flex-direction: column;
@@ -96,30 +104,28 @@
 }
 
 .compare-row:nth-child(odd) .sweden-cell {
-  background-color: #d6eaf8;
+  background-color: rgba(214, 234, 248, 0.7);
 }
 
-
-
 .compare-row:nth-child(even) .sweden-cell {
-  background-color: #ebf5fb;
+  background-color: rgba(235, 245, 251, 0.7);
 }
 
 .compare-row:nth-child(odd) .norway-cell {
-  background-color: #fadbd8;
+  background-color: rgba(250, 219, 216, 0.7);
 }
 
 .compare-row:nth-child(even) .norway-cell {
-  background-color: #fce4e4;
+  background-color: rgba(252, 228, 228, 0.7);
 }
 
 .compare-row:nth-child(odd) .label-cell {
-  background-color: #2c2c2c;
+  background-color: rgba(44, 44, 44, 0.7);
   color: #ffffff;
 }
 
 .compare-row:nth-child(even) .label-cell {
-  background-color: #3d3d3d;
+  background-color: rgba(61, 61, 61, 0.9);
   color: #ffffff;
 }
 

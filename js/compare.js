@@ -15,11 +15,21 @@ rows.forEach(row => {
 
 
 function openSidebar() {
-  document.getElementById("Sidebar").style.display = "block";
+  document.getElementById("sidebar").style.display = "block";
   console.log("open")
 }
 
 function closeSidebar() {
   document.getElementById("sidebar").style.display = "none";
   console.log("closed")
+}
+
+function openSidebarRight() {
+  document.getElementById("sidebar-right").style.display = "block";
+  console.log("open right")
+}
+
+function closeSidebarRight() {
+  document.getElementById("sidebar-right").style.display = "none";
+  console.log("closed right")
 }

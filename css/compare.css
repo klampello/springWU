@@ -1,5 +1,67 @@
 
 
+.side-panel {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #2b2b2b;
+  padding-top: 50px;
+  z-index: 999;
+}
+
+.side-panel-left  { left: 0; }
+.side-panel-right { right: 0; }
+
+.side-panel a {
+  display: block;
+  padding: 12px 20px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.side-panel a:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.side-title {
+  color: #fff;
+  font-weight: bold;
+  padding: 0 20px 10px;
+  margin: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.side-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.side-open {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 998;
+}
+
+.side-open-left  { left: 0;  border-radius: 0 8px 8px 0; }
+.side-open-right { right: 0; border-radius: 8px 0 0 8px; }
+
 body {
   background-image: url('../img/Torg.jpg'), url('../img/Fjord.webp');
   background-position: left center, right center;

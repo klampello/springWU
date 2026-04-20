@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #dceefa;
+    background-color: #3e3e3e;
     padding: 20px;
     text-align: center;
     height: 400px;
@@ -23,11 +23,11 @@ header {
     justify-content: center;
     font-size: 1.4rem;
     font-weight: bold;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 nav {
-    background-color: #dceefa;
+    background-color: #3e3e3e;
     padding: 14px;
     text-align: center;
     border-radius: 12px;
@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #dceefa;
+    background-color: #3e3e3e;
     padding: 14px;
     text-align: center;
     border-radius: 12px;

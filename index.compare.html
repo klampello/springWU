@@ -10,33 +10,29 @@
 <body>
 
   
-  <div id="sidebar" style="display:none; background-color: gray; width: 200px; height: 100%; position: fixed; top: 0; left: 0;">
-    <p style="color: white; margin-left: 10px;">Countryes:</p>
-    <br>
-    <a href="#" style="color:white; display:block; margin: 5px;">Finlande</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Denmarkk</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Icelands</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Germnay</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Polan</a>
-    <br>
-    <button onclick="closeSidebar()" style="margin-left:10px;">close</button>
+  <div id="sidebar" class="side-panel side-panel-left">
+    <button class="side-close" onclick="closeSidebar()">✕</button>
+    <p class="side-title">Countries</p>
+    <a href="#">Finlande</a>
+    <a href="#">Denmarkk</a>
+    <a href="#">Icelands</a>
+    <a href="#">Germnay</a>
+    <a href="#">Polan</a>
   </div>
 
-  <button onclick="openSidebar()" style="position:fixed; top: 40%; left:0; z-index:999;">menu</button>
+  <button class="side-open side-open-left" onclick="openSidebar()">&#9776;</button>
 
-  <div id="sidebar-right" style="display:none; background-color: gray; width: 200px; height: 100%; position: fixed; top: 0; right: 0;">
-    <p style="color: white; margin-left: 10px;">Countryes:</p>
-    <br>
-    <a href="#" style="color:white; display:block; margin: 5px;">Finlande</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Denmarkk</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Icelands</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Germnay</a>
-    <a href="#" style="color:white; display:block; margin: 5px;">Polan</a>
-    <br>
-    <button onclick="closeSidebarRight()" style="margin-left:10px;">close</button>
+  <div id="sidebar-right" class="side-panel side-panel-right">
+    <button class="side-close" onclick="closeSidebarRight()">✕</button>
+    <p class="side-title">Countries</p>
+    <a href="#">Finlande</a>
+    <a href="#">Denmarkk</a>
+    <a href="#">Icelands</a>
+    <a href="#">Germnay</a>
+    <a href="#">Polan</a>
   </div>
 
-  <button onclick="openSidebarRight()" style="position:fixed; top: 40%; right:0; z-index:999;">menu</button>
+  <button class="side-open side-open-right" onclick="openSidebarRight()">&#9776;</button>
 
   <div class="container">
 

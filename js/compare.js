@@ -15,21 +15,21 @@ rows.forEach(row => {
 
 
 function openSidebar() {
-  document.getElementById("sidebar").style.display = "block";
+  document.getElementById("sidebar").classList.add("open");
   console.log("open")
 }
 
 function closeSidebar() {
-  document.getElementById("sidebar").style.display = "none";
+  document.getElementById("sidebar").classList.remove("open");
   console.log("closed")
 }
 
 function openSidebarRight() {
-  document.getElementById("sidebar-right").style.display = "block";
+  document.getElementById("sidebar-right").classList.add("open");
   console.log("open right")
 }
 
 function closeSidebarRight() {
-  document.getElementById("sidebar-right").style.display = "none";
+  document.getElementById("sidebar-right").classList.remove("open");
   console.log("closed right")
 }

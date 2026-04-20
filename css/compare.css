@@ -9,10 +9,13 @@
   background-color: #2b2b2b;
   padding-top: 50px;
   z-index: 999;
+  transition: display 0.35s ease;
 }
 
-.side-panel-left  { left: 0; }
-.side-panel-right { right: 0; }
+.side-panel-left  { left: 0;  transform: translateX(-100%); }
+.side-panel-right { right: 0; transform: translateX(100%); }
+
+.side-panel.open { transform: translateX(0); }
 
 .side-panel a {
   display: block;

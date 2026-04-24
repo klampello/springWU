@@ -21,7 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 4rem;
     font-weight: bold;
     color: #ffffff;
 }
@@ -42,11 +42,12 @@ nav a {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background-color 0.2s;
 }
 
 nav a:hover {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: background-color 0.2s;
 }
 
 footer {
@@ -105,6 +106,7 @@ footer {
 .box-image {
     overflow: hidden;
     order: -1;
+    padding: 10px;
 }
 
 .box-image img {
@@ -113,6 +115,11 @@ footer {
     object-fit: cover;
     display: block;
     filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.box:hover .box-image img {
+    filter: brightness(1);
 }
 
 @media screen and (max-width: 600px) {

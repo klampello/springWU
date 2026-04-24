@@ -1,3 +1,10 @@
+body {
+  background-image: url('../img/map.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .ranking-columns {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

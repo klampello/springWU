@@ -1,8 +1,23 @@
 .omoss-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.omoss-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 0;
+}
+
+.omoss-right {
+  background-color: rgba(44, 44, 44, 0.7);
+  border-radius: 12px;
+  padding: 24px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 .omoss-card {

@@ -120,6 +120,17 @@ footer {
         padding: 10px;
     }
 
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    nav a {
+        margin: 0;
+        text-align: center;
+    }
+
     .row2 {
         grid-template-columns: 1fr;
         height: auto;

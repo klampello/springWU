@@ -73,9 +73,9 @@ footer {
 }
 
 .box {
-    background-color: #fdf3e3;
+    background-color: rgba(44, 44, 44, 0.7);
     border-radius: 12px;
-    border: 1px solid #e8d9c0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
@@ -92,13 +92,13 @@ footer {
 .box-text h3 {
     margin: 0 0 8px 0;
     font-size: 1rem;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .box-text p {
     margin: 0;
     font-size: 0.875rem;
-    color: #555;
+    color: #ccc;
     line-height: 1.5;
 }
 
@@ -112,6 +112,7 @@ footer {
     height: 100%;
     object-fit: cover;
     display: block;
+    filter: brightness(0.6);
 }
 
 @media screen and (max-width: 600px) {

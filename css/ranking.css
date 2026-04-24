@@ -6,19 +6,58 @@
 }
 
 .rank-col {
-  background-color: #dceefa;
+  background-color: rgba(44, 44, 44, 0.7);
   border-radius: 12px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.rank-col h3 {
+.rank-title {
   margin: 0 0 10px 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 10px;
 }
 
-.rank-col p {
-  margin: 4px 0;
-  font-size: 0.9rem;
+.rank-entry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rank-entry.rank-first {
+  background-color: rgba(255, 215, 0, 0.15);
+}
+
+.rank-num {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #aaa;
+  width: 18px;
+  flex-shrink: 0;
+}
+
+.rank-first .rank-num { color: gold; }
+
+.rank-country {
+  font-size: 0.85rem;
+  color: #ddd;
+  flex: 1;
+}
+
+.rank-value {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-align: right;
 }
 
 @media screen and (max-width: 800px) {

@@ -56,7 +56,7 @@ footer {
     text-align: center;
     border-radius: 12px;
     font-size: 0.9rem;
-    color: #444;
+    color: #ffffff;
 }
 
 .row2 {
@@ -71,6 +71,14 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
     height: 235px;
+}
+
+.row3 .box-text p {
+    font-size: 0.68rem;
+}
+
+.row3 .box-text h3 {
+    font-size: 0.78rem;
 }
 
 .box {

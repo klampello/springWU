@@ -9,6 +9,28 @@
 </head>
 <body>
 
+  <div id="contact-panel" class="contact-panel">
+    <button class="contact-close" onclick="closeContact()">✕</button>
+    <h3>Kontakt</h3>
+    <div class="contact-entry">
+      <strong>Lennart Forsberg</strong>
+      <p>lennart.forsberg@demografia.se</p>
+      <p>+46 70 123 45 67</p>
+    </div>
+    <div class="contact-entry">
+      <strong>Johan Ekmark</strong>
+      <p>johan.ekmark@demografia.se</p>
+      <p>+46 70 234 56 78</p>
+    </div>
+    <div class="contact-entry">
+      <strong>Henrik Bergsås</strong>
+      <p>henrik.bergsas@demografia.se</p>
+      <p>+46 70 345 67 89</p>
+    </div>
+  </div>
+
+  <button class="contact-open-btn" onclick="openContact()">&#9776; Kontakt</button>
+
   <div class="container">
 
     <header>Om oss</header>
@@ -24,32 +46,40 @@
 
       <div class="omoss-left">
         <div class="omoss-card">
-          <div class="omoss-img"></div>
+          <div class="omoss-img"><img src="img/person1.jpg" alt="Lennart Forsberg"></div>
           <div class="omoss-text">
-            <h2>Name</h2>
-            <p>Role</p>
+            <h2>Lennart Forsberg</h2>
+            <p>Projektledare & Dataanalys</p>
           </div>
         </div>
 
         <div class="omoss-card">
-          <div class="omoss-img"></div>
+          <div class="omoss-img"><img src="img/person2.avif" alt="Johan Ekmark"></div>
           <div class="omoss-text">
-            <h2>Name</h2>
-            <p>Role</p>
+            <h2>Johan Ekmark</h2>
+            <p>Webbutveckling & Design</p>
           </div>
         </div>
 
         <div class="omoss-card">
-          <div class="omoss-img"></div>
+          <div class="omoss-img"><img src="img/person3.avif" alt="Henrik Bergsås"></div>
           <div class="omoss-text">
-            <h2>Name</h2>
-            <p>Role</p>
+            <h2>Henrik Bergsås</h2>
+            <p>Innehåll & Research</p>
           </div>
         </div>
       </div>
 
       <div class="omoss-right">
-        <p>Text</p>
+        <p>
+          Demografia is a website dedicated to exploring and presenting demographic data from countries around the world, with a particular focus on Europe and the Nordic region. Our goal is to make complex population statistics accessible and easy to understand for everyone — whether you are a student, a researcher, or simply curious about the world.
+        </p>
+        <p>
+          The world is constantly changing. Populations grow, shrink, migrate, and age. These shifts follow patterns tied to economics, education, health, and policy. Understanding them is essential for understanding the future. On this site you will find rankings, comparisons, and stories behind the numbers — because every statistic represents a society, a culture, and millions of individual lives.
+        </p>
+        <p>
+          Demografia was built as a school project by three students with a shared interest in data, geography, and design. We have worked to present accurate information in a clean and modern format, easy to navigate on any device. We hope it sparks curiosity and contributes to a better-informed understanding of global society.
+        </p>
       </div>
 
     </main>
@@ -57,6 +87,8 @@
     <footer>Om oss</footer>
 
   </div>
+
+  <script src="js/omoss.js"></script>
 
 </body>
 </html>

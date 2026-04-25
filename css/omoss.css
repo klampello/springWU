@@ -1,3 +1,82 @@
+.contact-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.95);
+  padding: 60px 24px 24px 24px;
+  z-index: 999;
+  transform: translateX(-100%);
+  transition: transform 0.35s ease;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-panel.open {
+  transform: translateX(0);
+}
+
+.contact-panel h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 10px;
+}
+
+.contact-entry {
+  margin-bottom: 20px;
+}
+
+.contact-entry strong {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.contact-entry p {
+  margin: 4px 0 0 0;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.contact-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.contact-close:hover {
+  color: #fff;
+}
+
+.contact-open-btn {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(44, 44, 44, 0.85);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: none;
+  padding: 12px 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 0 8px 8px 0;
+  z-index: 998;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transition: background-color 0.2s;
+}
+
+.contact-open-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 .omoss-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -18,6 +97,7 @@
   color: #ccc;
   font-size: 0.95rem;
   line-height: 1.7;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .omoss-card {
@@ -27,6 +107,7 @@
   background-color: rgba(44, 44, 44, 0.7);
   border-radius: 12px;
   padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .omoss-img {
@@ -35,6 +116,14 @@
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.omoss-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .omoss-text h2 {
@@ -53,5 +142,9 @@
   .omoss-card {
     flex-direction: column;
     text-align: center;
+  }
+
+  .omoss-wrapper {
+    grid-template-columns: 1fr;
   }
 }

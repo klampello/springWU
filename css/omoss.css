@@ -1,3 +1,10 @@
+body {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .contact-panel {
   position: fixed;
   top: 0;
@@ -146,5 +153,29 @@
 
   .omoss-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .contact-panel.open {
+    transform: translateY(0);
+  }
+
+  .contact-open-btn {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    writing-mode: horizontal-tb;
+    border-radius: 0 0 8px 8px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: none;
   }
 }

@@ -5,11 +5,17 @@ body {
   background-attachment: fixed;
 }
 
+.container {
+  max-width: 1400px;
+}
+
 .ranking-columns {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
   min-height: 500px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .rank-col {
